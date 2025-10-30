@@ -1,4 +1,10 @@
-# React implementation — TicketApp (scaffold)
+# TicketApp — Multi-framework implementations
+
+This workspace contains three separate frontend implementations for the "Frontend Stage 2 — Multi-Framework Ticket Web App" challenge:
+
+- `react-app` — React + Vite implementation (working, contains mock API and full CRUD flows)
+- `vue-app` — placeholder/skeleton to scaffold a Vue + Vite implementation that mirrors the React app
+- `twig-app` — placeholder/skeleton to scaffold a PHP + Twig implementation (server-rendered templates)
 
 This folder contains the React scaffold for the TicketApp required by Frontend Stage 2.
 
@@ -17,18 +23,5 @@ This folder contains the React scaffold for the TicketApp required by Frontend S
 cd "react-app"
 npm install
 npm run dev
-```
-Open http://localhost:5173
 
-## Notes
-- Authentication is simulated and stored in localStorage under `ticketapp_session`.
-- Ticket CRUD persists to localStorage under `ticketapp_tickets`.
-- This is a scaffold: forms and components are minimal and meant as a starting point for implementing the full validation, toasts, and error handling required by the challenge.
-
-## Example test credential
-- Email: demo@example.com (any email will log in)
-
-## Next steps (recommended)
-- Add react-hot-toast to show toasts on success/error.
-- Implement inline validation rules per spec (title required, status must be open|in_progress|closed).
-- Add confirmation dialog for deletes and protected-route messaging when session expires.
+Open http://localhost:5173 

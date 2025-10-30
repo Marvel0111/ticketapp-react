@@ -34,8 +34,11 @@ export default function Layout({ children }) {
       <main className="container" role="main">{children}</main>
 
       <footer className="container footer" role="contentinfo">
-        <small>© {new Date().getFullYear()} TicketApp — Built for Frontend Stage 2</small>
+        <small>© {new Date().getFullYear()} TicketApp — Built for Frontend Stage 2 </small>
       </footer>
     </div>
-  )
+  ) 
 }
+
+
+

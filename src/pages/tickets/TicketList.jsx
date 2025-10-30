@@ -75,7 +75,7 @@ export default function TicketList(){
 
       <section className="grid">
         {loading && <div className="card">Loading tickets…</div>}
-        {!loading && tickets.length===0 && <div className="card">No tickets yet. Create one above.</div>}
+        {!loading && tickets.length===0 && <div className="card">No tickets yet. Create one above. </div>}
         {tickets.map(t=> (
           <div key={t.id} className="ticket-card">
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
