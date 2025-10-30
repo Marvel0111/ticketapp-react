@@ -1,4 +1,8 @@
+// src/components/Hero.jsx (Modified Content)
+
 import React from 'react';
+// 1. 👈 Import the Link component
+import { Link } from 'react-router-dom'; 
 import './Hero.css';
 import wave from '../../shared-assets/hero-wave.svg';
 
@@ -11,8 +15,9 @@ export default function Hero(){
         <h1 id="hero-title">TicketApp</h1>
         <p>Manage tickets across teams — open, in progress, and closed.</p>
         <div style={{marginTop:16}}>
-          <a className="card" href="/auth/login" style={{marginRight:8}}>Login</a>
-          <a className="card" href="/auth/signup">Get Started</a>
+          {/* 2. 👈 Replace <a> with <Link> and href with to */}
+          <Link className="card" to="/auth/login" style={{marginRight:8}}>Login</Link>
+          <Link className="card" to="/auth/signup">Get Started</Link>
         </div>
       </div>
       <img src={wave} alt="decorative wave" style={{position:'absolute',bottom:0,left:0,right:0,width:'100%'}}/>
