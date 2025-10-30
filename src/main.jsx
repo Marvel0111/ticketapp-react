@@ -1,16 +1,18 @@
-// src/main.jsx (Modified Content)
+// src/main.jsx (Restructured Content)
 
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+// 1. Change the import from BrowserRouter to HashRouter
+import { HashRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* 👈 Set the basename using the Vite environment variable */}
-    <BrowserRouter basename={import.meta.env.BASE_URL}> 
+    {/* 2. Change the component to HashRouter */}
+    {/* The 'basename' prop is no longer needed with HashRouter */}
+    <HashRouter> 
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
