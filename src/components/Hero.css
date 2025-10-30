@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #ffffff;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+#hero-title {
+  color: #551a8b;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  background: #ffffff;
+  color: #4f46e5;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+.btn-primary {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #312e81;
+}
+
+/* Decorative Circles */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.circle-1 {
+  width: 180px;
+  height: 180px;
+  top: 40px;
+  left: -60px;
+  background: #818cf8;
+}
+
+.circle-2 {
+  width: 120px;
+  height: 120px;
+  bottom: 80px;
+  right: -40px;
+  background: #c7d2fe;
+}
+
+/* Wave Divider */
+.hero-wave {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
