@@ -1,4 +1,6 @@
 import React from 'react';
+// 1. Import 'Link' from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import heroWave from '../assets/hero-wave.svg';
 
@@ -15,8 +17,10 @@ export default function Hero() {
         <p>Manage tickets easily across teams — open, in progress, and closed.</p>
 
         <div className="hero-buttons">
-          <a href="/auth/login" className="btn">Login</a>
-          <a href="/auth/signup" className="btn btn-primary">Get Started</a>
+          {/* 2. Replace <a> with <Link> and href with to */}
+          <Link to="/auth/login" className="btn">Login</Link>
+          {/* 3. Replace <a> with <Link> and href with to */}
+          <Link to="/auth/signup" className="btn btn-primary">Get Started</Link>
         </div>
       </div>
 
